@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Aula 1 - HTML</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+		<img src="images/dh-logo.png" alt="Digital House" class="dh-logo">
+		<img src="images/css3-logo.png" alt="CSS3" class="slides-logo">
+		
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/css3.jpg">
+				</section>
+
+				<section>
+					<h2>O que é CSS?</h2>
+					<p class="default-color">Cascading Style Sheet</p>
+				</section>
+
+				<section>
+					<img src="images/lego.gif" width="900" style="border: none; box-shadow: none;">
+				</section>
+
+				<section>
+					<h2>Para que serve o CSS?</h2>
+					<p>As folhas de estilo servem para estilizar o nosso conteúdo HTML. O CSS permite alterar cores, planos de fundo, tipografias,
+					alturas, larguras, etc. Também permite gerar animações e transições.</p>
+				</section>
+
+				<section>
+					<h2>Inserindo CSS na sua página</h2>
+					<p>Há três métodos para vincular documentos HTML ao CSS:</p>
+				</section>
+
+				<section>
+					<h2>Atributos HTML</h2>
+					<p>Os atributos HTML servem para inserir informações adicionais ao elemento:</p>
+					<pre>
+						<code class="html text-center large" data-trim>
+							<h1 align="center">...</h1>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Elemento HTML</h2>
+					<p>Um elemento HTML é o conjunto formado pela<br><strong>tag</strong> + <strong>atributos</strong> + <strong>conteúdo</strong> dentro dela</p>
+					<pre>
+						<code class="html text-center large" data-trim>
+							<h1 align="center">Isso é um título</h1>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Estrutura básica de um documento HTML</h2>
+					<img src="images/estrutura-html.png" width="600">
+				</section>
+
+				<section data-background="http://i.giphy.com/90F8aUepslB84.gif"></section>
+				
+				<section id="fragments">
+					<h2>Nomenclatura de arquivos</h2>
+					<div style="text-align: left; margin: 0 auto;">
+						<p>1. <strong>Sempre</strong> usar minúsculas.</p>
+						<p>2. <strong>Nunca</strong> usar espaço entre as palavras.<br>Usar "_" ou "-" para separar.</p>
+						<p>3. <strong>Nunca</strong> usar caracteres especiais<br>como acentos, "!", etc.</p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Cabeçalhos</h2>
+					<p>Tag semântica que permite gerar um título ou subtítulos.</p>
+					<pre>
+						<code class="html large" data-trim>
+							<h1>Título principal</h1>
+							<h2>Subtítulo</h2>
+							<h3>Outro subtítulo</h3>
+							<h4>Mais um subtítulo</h4>
+							<h5>Outro, por que não?</h5>
+							<h6>Agora sim, o último</h6>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<img src="images/alert-icon.png" style="border: none; box-shadow: none; width: 200px">
+					<p><strong>Atenção</strong></p>
+					<p>Seu site deve conter apenas um<br>elemento <strong>&lt;h1&gt;</strong> por página!</p>
+				</section>
+
+				<section>
+					<h2>Parágrafos</h2>
+					<p>Tag que permite gerar blocos de texto em forma de parágrafos.</p>
+					<pre>
+						<code class="html large" data-trim>
+							<p>
+							  Lord Vader. You may take Captain Solo
+							  to Jabba the Hut after I have Skywalker.
+							</p>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Listas Ordenadas</h2>
+					<p>
+						Tag usada para listar itens de maneira consecutiva.<br>
+						Por padrão, usa marcadores numéricos, começando pelo 1. É possível alterar o marcador.
+					</p>
+					<pre>
+						<code class="html large" data-trim>
+							<ol>
+							  <li>Item da lista</li>
+							  <li>Item da lista</li>
+							  <li>Item da lista</li>
+							</ol>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Listas desordenadas</h2>
+					<p>
+						Tag usada para listar itens de maneira consecutiva.<br>
+						Por padrão, usa marcadores do tipo "bolinha" (bullet). É possível alterar o marcador.
+					</p>
+					<pre>
+						<code class="html large" data-trim>
+							<ul>
+							  <li>Item da lista</li>
+							  <li>Item da lista</li>
+							  <li>Item da lista</li>
+							</ul>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Atributos das Listas</h2>
+					<p>
+						O atributo <strong>type</strong> permite alterar o tipo de marcador de cada lista.
+						O <strong>start</strong> permite definir por qual número queremos que a lista comece.
+					</p>
+					<pre>
+						<code class="html" data-trim>
+							<ol type="1">...</ol>
+							<ol type="1" start="10">...</ol>
+							<ol type="A">...</ol>
+							<ol type="A" start="3">...</ol>
+							<ol type="I">...</ol>
+							<ul type="disc">...</ul>
+							<ul type="circle">...</ul>
+							<ul type="square">...</ul>
+						</code>
+					</pre>
+				</section>
+
+				<section data-background="https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif">
+					<h1 style="color: white; margin-top: 350px">Vamos praticar!</h1>					
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ 
+						src: 'plugin/highlight/highlight.js', 
+						async: true, 
+						callback: function() { 
+							hljs.initHighlightingOnLoad(); 
+						} 
+					}
+				]
+			});
+		</script>
+	</body>
+</html>
