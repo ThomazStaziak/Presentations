@@ -1,0 +1,20 @@
+:root {
+  --html: #e54d26;
+  --css: #40aae0;
+}
+
+.html-top-border {
+  border-top: 5px solid var(--html);
+}
+
+.html-color {
+  color: var(--html);
+}
+
+.css-top-border {
+  border-top: 5px solid var(--css);
+}
+
+.css-color { 
+  color: var(--css); 
+}

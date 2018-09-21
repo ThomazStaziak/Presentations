@@ -1,0 +1,6 @@
+@import "../libs/reveal/reveal.css";
+@import "../libs/reveal/theme/white.css";
+@import "../libs/reveal/lib/css/zenburn.css";
+
+@import "common.css";
+@import "colors.css";
