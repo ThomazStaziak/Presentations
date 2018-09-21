@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Aula 2 - HTML</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+		<img src="images/dh-logo.png" alt="Digital House" class="dh-logo">
+		<img src="images/html5-logo.png" alt="HTML5" class="slides-logo">
+
+		<a href="../css/#/" class="css-link" id="cssLink">
+			<img src="images/css-btn.png" alt="CSS Botão" width="100">
+		</a>
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/html5.jpg">
+				</section>
+
+				<section>
+					<h3 class="default-color">O que aprendemos na aula anterior?</h3>
+				</section>
+
+				<section>
+					<h2>HTML</h2>
+					<p>
+						HTML é uma linguagem de marcação que permite estruturar e apresentar conteúdo em uma página web.
+					</p>
+				</section>
+
+				<section>
+					<h2>Algumas Tags que já vimos:</h2>
+					<pre>
+						<code class="html text-center large" data-trim>
+							&lt;html&gt;
+							&lt;head&gt;
+							&lt;title&gt;
+							&lt;meta&gt;
+							&lt;body&gt;
+							&lt;p&gt;
+							&lt;h1&gt; - &lt;h6&gt;
+							&lt;ol&gt; - &lt;ul&gt;
+							&lt;li&gt;
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>CSS</h2>
+					<p>
+						CSS é uma linguagem composta por regras de estilo com a finalidade de “estilizar” as tags html.
+					</p>
+				</section>
+
+				<section>
+					<h3>Algumas propriedades que já vimos:</h3>
+					<pre>
+						<code class="css text-center large" data-trim>
+							font-family: arial, sans-serif;
+							font-style: italic;
+							font-size: 15px;
+							text-align: center;
+						</code>
+					</pre>
+				</section>
+
+				<section data-background="images/what-else.gif"></section>	
+
+				<section id="fragments">
+					<h2 class="default-color">Introdução a caminhos</h2>
+				</section>
+
+				<section>
+					<h3>Vamos definir!</h3>
+					<p>Os <strong>links</strong> de internet são formados por uma série de caminhos. O caminho indica o <strong>endereço</strong> até onde o navegador deve ir quando o usuário clica em um link.</p>
+				</section>
+
+				<section>
+					<h2>Tipos de caminho</h2>
+					<p>Existem dois tipos de caminhos:</p>
+					<table class="border">
+					  <thead>
+					    <tr>
+					      <th class="b-right">Absoluto</th>
+					      <th>Relativo</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td class="b-right">https://digitalhouse.com</td>
+					      <td>../images/teaser.jpg</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Links</h2>
+					<p>A tag <strong>&lt;a&gt;</strong> é usada para definir o destino de um link.</p>
+					<pre>
+						<code class="html text-center large" data-trim>
+							<a href="CaminhoDestino"></a>
+						</code>
+					</pre>
+					<strong>Vamos ver alguns deles?</strong>
+				</section>
+
+				<section>
+					<h2>Externo</h2>
+					<pre>
+						<code class="html text-center" data-trim>
+							<a href="http://google.com">Ir para o Google</a>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Local</h2>
+					<pre>
+						<code class="html text-center" data-trim>
+							<a href="contato.html">Fale conosco</a>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Interno (âncora)</h2>
+					<pre>
+						<code class="html text-center" data-trim>
+							<a href="#bio"> Biografia</a>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>E-mail</h2>
+					<pre>
+						<code class="html text-center" data-trim>
+							<a href="mailto:user@server.com">Fale comigo agora!</a>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Telefone</h2>
+					<pre>
+						<code class="html text-center" data-trim>
+							<a href="tel:1145678900"> Ligue já!</a>
+						</code>
+					</pre>
+				</section>
+
+				<section data-background="images/lets-practice.gif">
+					<h1 style="color: white; margin-top: 350px">Vamos praticar!</h1>
+				</section>
+
+				<section>
+					<h2>Tag de imagem</h2>
+					<pre>
+						<code class="html text-center large" data-trim>
+							<img src="" alt="" width="" height="">
+						</code>
+					</pre>
+					<ul>
+						<li>
+							src = caminho / origem da imagem
+						</li>
+						<li>
+							alt = descrição da imagem / SEO
+						</li>
+						<li>
+							width = largura / não obrigatório
+						</li>
+						<li>
+							height = altura / não obrigatório
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Tag de vídeo</h2>
+					<pre class="m-b-0">
+						<code class="hmtl large" data-trim>
+							<video width="" poster="image.jpg">
+						   <source src="video.mp4" type="video/mp4">
+						   <source src="video.ogg" type="video/ogg">
+						   <source src="video.webm" type="video/webm">
+						   <p>Seu navegador não suporta vídeo HTML5</p>
+							</video>
+						</code>
+					</pre>
+					<span>Outros atributos:</span>
+					<li>controls</li>
+					<li>autoplay</li>
+				</section>
+
+				<section>
+					<h2>Tag de áudio</h2>
+					<pre>
+						<code class="html large" data-trim>
+							<audio width="" controls poster="image.jpg">
+						   <source src="audio.mp3" type="audio/mp3">
+						   <source src="audio.wav" type="audio/x-wav">
+						   <source src="audio.ogg" type="audio/ogg-">
+						   <p>Seu navegador não suporta áudio HTML5</p>
+						 </audio>
+						</code>
+					</pre>
+				</section>
+
+				<section data-background="images/lets-practice.gif">
+					<h1 style="color: white; margin-top: 350px">Vamos praticar!</h1>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						callback: function() {
+							hljs.initHighlightingOnLoad();
+						}
+					}
+				]
+			});
+
+			Reveal.addEventListener('slidechanged', function (event) {
+				if (Reveal.isLastSlide()) {
+					cssLink.style.display = 'block'
+				} else {
+					cssLink.style.display = 'none'
+				}
+			})
+		</script>
+	</body>
+</html>
