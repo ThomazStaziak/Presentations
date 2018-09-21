@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Aula 1 - HTML</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+		<img src="images/dh-logo.png" alt="Digital House" class="dh-logo">
+		<img src="images/css3-logo.png" alt="CSS3" class="slides-logo">
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/css3.jpg">
+				</section>
+
+				<section>
+					<h2>O que é CSS?</h2>
+					<p class="default-color">Cascading Style Sheet</p>
+				</section>
+
+				<section>
+					<img src="images/lego.gif" width="900" style="border: none; box-shadow: none;">
+				</section>
+
+				<section>
+					<h2>Para que serve o CSS?</h2>
+					<p>As folhas de estilo servem para estilizar o nosso conteúdo HTML. O CSS permite alterar cores, planos de fundo, tipografias,
+					alturas, larguras, etc. Também permite gerar animações e transições.</p>
+				</section>
+
+				<section>
+					<h2>Inserindo CSS na sua página</h2>
+					<p>Há três métodos para vincular documentos HTML ao CSS:</p>
+				</section>
+
+				<section>
+					<h2>Externo</h2>
+					<pre>
+						<code class="html text-center large" data-trim>
+							<link rel="stylesheet" href="arquivoCSS.css">
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Onde coloco esse link?</h2>
+					<pre>
+						<code class="html large" data-trim>
+							&#60;head&#62;
+							  <link rel="stylesheet" href="arquivoCSS.css">
+							&#60;/head&#62;
+						</code>
+					</pre>
+				</section>
+
+
+				<section>
+					<h2>Interno</h2>
+					<pre>
+						<code class="html text-center large" data-trim>
+							<style></style>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Em linha</h2>
+					<pre class="large">
+						<code class="html text-center large" data-trim>
+							<p style="color: red;"></p>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Regras de CSS</h2>
+					<p>Conceito</p>
+					<pre>
+						<code class="css large" data-trim>
+							seletor {
+							  propriedade: valor;
+							}
+						</code>
+					</pre>
+				</section>
+				<!-- IDEA: inserir os tipos de seletores: id e tag -->
+				<section>
+					<h2>Regras de CSS</h2>
+					<p>Exemplo</p>
+					<pre>
+						<code class="css large" data-trim>
+							body {
+							  background-color: #00ff00;
+							  font-family: sans-serif;
+							  text-align: center;
+							}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Propriedades CSS</h2>
+					<p>Tipografia</p>
+					<pre>
+						<code class="css large" data-trim>
+							p {
+							  font-family: verdana, arial, sans-serif;
+							}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Propriedades CSS</h2>
+					<p>Tipografia</p>
+					<pre class="mb-0">
+						<code class="css large" data-trim>
+						h1 {
+						  font-size: 15px;
+						}
+						</code>
+					</pre>
+					<h6 >Outros valores</h6>
+					<ul>
+						<li>10em</li>
+						<li>20pt</li>
+						<li>5cm</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Propriedades CSS</h2>
+					<p>Tipografia</p>
+					<pre class="mb-0">
+						<code class="css large" data-trim>
+							.fonteLarga {
+							  font-weight: bolder;
+							}
+						</code>
+					</pre>
+					<h6>Outros valores</h6>
+					<ul>
+						<li>Lighter</li>
+						<li>Normal</li>
+						<li>100 a 900</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Propriedades CSS</h2>
+					<p>Tipografia</p>
+					<pre>
+						<code class="css large" data-trim>
+						 .fonteItalic {
+				  	   font-style: italic;
+							}
+						</code>
+					</pre>
+					<h6>Outros valores</h6>
+					<ul>
+						<li>Normal</li>
+						<li>Oblique</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Propriedades CSS</h2>
+					<p>Tipografia</p>
+					<pre class="mb-0">
+						<code class="css large" data-trim>
+						 div {
+				  	   text-align: left;
+							}
+						</code>
+					</pre>
+					<h6>Outros valores</h6>
+					<ul>
+						<li>Justify</li>
+						<li>Center</li>
+						<li>Right</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Propriedades CSS</h2>
+					<p>Tipografia</p>
+					<pre class="mb-0">
+						<code class="css large" data-trim>
+						 a {
+				  	   text-decoration: none;
+							}
+						</code>
+					</pre>
+					<h6>Outros valores</h6>
+					<ul>
+						<li>Underline</li>
+						<li>Overline</li>
+						<li>Line-through</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Propriedades CSS</h2>
+					<p>Tipografia</p>
+					<pre class="mb-0">
+						<code class="css large" data-trim>
+							p {
+							  line-height: 20px;
+							}
+						</code>
+					</pre>
+					<h6 >Outros valores</h6>
+					<ul>
+						<li>10em</li>
+						<li>20pt</li>
+						<li>5cm</li>
+					</ul>
+				</section>
+
+				<section data-background="https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif">
+					<h1 style="color: white; margin-top: 350px">Vamos praticar!</h1>
+				</section>
+
+				<section data-background="images/thanks-1.gif"></section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						callback: function() {
+							hljs.initHighlightingOnLoad();
+						}
+					}
+				]
+			});
+		</script>
+	</body>
+</html>
