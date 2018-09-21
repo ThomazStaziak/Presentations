@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Exercícios - Aula 01 - HTML + CSS</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <style>
+    body { padding-bottom: 50px; }
+    li { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-center">
+      <img src="html/images/dh-logo.png" alt="Digital House" width="400">
+    </div>
+    <div class="page-header">
+      <h1>
+        Exercícios
+        <small>
+          HTML + CSS | Aula 01
+        </small>
+      </h1>
+    </div>
+
+    <section>
+      <div class="page-header">
+        <h2>
+          Vamos fazer uma página que deverá exibir suas qualificações profissionais!<br>
+          <small>No editor de texto, abrir um novo documento e fazer o seguinte:</small>
+        </h2>
+      </div>
+      <ol>
+        <li>
+          Criar a estrutura básica de um documento HTML<br>
+          <small><strong>Lembrete:</strong> html, head, title, body</small>
+        </li>
+        <li>
+          Coloque o seu nome na tag <i>title</i><br>
+          <small><b>Exemplo:</b> Maria da Rosa | Desenvolvedora Web Fullstack</small>
+        </li>
+      </ol>
+      <div class="alert alert-info" role="alert">
+        Salve o arquivo como <b>index.html</b> e abra no navegador. Verifique se o seu nome aparece na barra do navegador.
+      </div>
+      <ol start="3">
+        <li>
+          Agora adicione o título principal, também contendo seu nome igual no <i>title</i>.<br>
+          <small><b>Lembrete:</b> Temos uma tag específica para o título principal da página</small>
+        </li>
+        <li>
+          Agora crie uma área <b>"Perfil"</b> que deverá ter uma breve descrição do seu perfil profissional.<br>
+          <small><b>Dica:</b> Você pode usar uma tag de subtítulo e outra de parágrafo</small>
+        </li>
+        <li>
+          Crie outra seção com o título <b>"Habilidades"</b> que deverá exibir: html, css, javascript, php, laravel, mysql. <br>
+          <small><b>Dica:</b> Use alguma tag de lista</small>
+        </li>
+        <li>
+          Crie outra seção para <b>"Experiência profissional"</b> que deverá exibir pelo menos 3 experiências contendo: nome da empresa, cargo e descrição. <br>
+        </li>
+      </ol>
+      <div class="alert alert-success" role="alert">
+        Muito bem! <a href="#" data-toggle="modal" data-target="#exemploHTML">Clique aqui</a> para ver um exemplo de como sua página deve ficar!
+      </div>
+    </section>
+
+    <section>
+      <div class="page-header">
+        <h2>
+          Agora vamos adicionar um pouco de CSS nessa página!<br>
+          <small>Crie um arquivo chamado <i>estilos.css</i></small>
+        </h2>
+      </div>
+      <ol>
+        <li>
+          Importe o arquivo criado na sua página. <br>
+          <small><b>Lembrete:</b> Utilize a tag <i>link</i> no <i>head</i> da página</small>
+        </li>
+        <li>
+          Crie uma regra para mudar a cor de fundo da sua página para cinza. <br>
+        </li>
+        <li>
+          Troque toda a tipografia da página para <b>sans-serif</b>. <br>
+          <small><b>Dica: </b>Aproveite a regra feita no exercício anterior.</small>
+        </li>
+        <li>
+          Troque a cor dos títulos e subtítulos para qualquer outra cor de sua escolha. <br>
+          <small><b>Dica: </b>Você pode pegar as referências de cores <a href="https://www.materialpalette.com/colors" target="blank">neste site</a>.</small>
+        </li>
+        <li>
+          Troque a cor dos parágrafos para qualquer outra cor de sua escolha.
+        </li>
+        <li>
+          Centralize o título principal e aplique um estilo itálico.
+        </li>
+        <li>
+          Por padrão, todos os títulos e subtítulos são negrito. Remova o negrito apenas dos subtítulos.
+        </li>
+        <li>
+          Alinhar todos os parágrafos de modo <b>justificado</b>, com um tamanho de fonte de <b>14px</b> e um espaçamento entre linhas de <b>16px</b>.          
+        </li>
+      </ol>
+      <div class="alert alert-success" role="alert">
+        Muito bem! <a href="#" data-toggle="modal" data-target="#exemploCSS">Clique aqui</a> para ver um exemplo de como sua página
+        deve ficar!
+      </div>
+    </section>
+
+    <section>
+      <div class="page-header">
+        <h2>
+          Desafio<br>
+          <small>Temos um desafio pra você =)</small>
+        </h2>
+      </div>
+      <p>
+        O Google tem um serviço gratuito chamado <b>Google Fonts</b>, lá você encontra diversos tipos de fontes diferentes para usar no seu site, todas gratuitas!
+      </p>
+      <p>
+        Nosso desafio é: acesse o <a href="https://fonts.google.com/">Google Fonts</a> e escolha uma fonte de sua preferência para inserir na sua página.
+      </p>
+      <p>
+        Depois de escolher uma fonte, o Google Fonts disponibiliza uma tag <b>link</b> para você importar a fonte no seu <b>head</b>, depois disso basta você usar a fonte através da regra <b>font-family</b>. O próprio Google Fonts vai te dar um exemplo disso!
+      </p>
+    </section>
+  </div>
+
+  <!-- Modal do exemplo de HTML -->
+  <div class="modal fade bs-example-modal-lg" id="exemploHTML" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Exemplo</h4>
+        </div>
+        <div class="modal-body">
+          <img src="html/images/exemplo-exercicio.png" alt="Exemplo" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal do exemplo de CSS -->
+  <div class="modal fade bs-example-modal-lg" id="exemploCSS" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Exemplo</h4>
+        </div>
+        <div class="modal-body">
+          <img src="css/images/exemplo-exercicio.png" alt="Exemplo" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+</body>
+</html>
