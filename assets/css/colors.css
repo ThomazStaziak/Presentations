@@ -8,13 +8,13 @@
 }
 
 .html-color {
-  color: var(--html);
+  color: var(--html) !important;
 }
 
 .css-top-border {
   border-top: 5px solid var(--css);
 }
 
-.css-color { 
-  color: var(--css); 
+.css-color {
+  color: var(--css) !important;
 }
