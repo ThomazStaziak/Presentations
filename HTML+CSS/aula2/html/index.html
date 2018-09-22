@@ -4,14 +4,21 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>Aula 2 - HTML</title>
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="../../../assets/css/main.css">
+		<style>
+			#cssLink {
+				position: absolute;
+				top: 15px;
+				right: 35px;
+				width: 80px;
+				z-index: 10;
+				display: none;
+			}
+		</style>
 	</head>
-	<body>
-		<img src="images/dh-logo.png" alt="Digital House" class="dh-logo">
-		<img src="images/html5-logo.png" alt="HTML5" class="slides-logo">
+	<body class="html-top-border">
+		<img src="images/dh-logo.png" alt="Digital House" class="digitalhouse-logo">
+		<img src="images/html5-logo.png" alt="HTML5" class="module-logo">
 
 		<a href="../css/#/" class="css-link" id="cssLink">
 			<img src="images/css-btn.png" alt="CSS Botão" width="100">
@@ -23,7 +30,7 @@
 				</section>
 
 				<section>
-					<h3 class="default-color">O que aprendemos na aula anterior?</h3>
+					<h3 class="html-color">O que aprendemos na aula anterior?</h3>
 				</section>
 
 				<section>
@@ -69,10 +76,10 @@
 					</pre>
 				</section>
 
-				<section data-background="images/what-else.gif"></section>	
+				<section data-background="images/what-else.gif"></section>
 
 				<section id="fragments">
-					<h2 class="default-color">Introdução a caminhos</h2>
+					<h2 class="html-color">Introdução a caminhos</h2>
 				</section>
 
 				<section>
@@ -220,26 +227,11 @@
 			</div>
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="../../../assets/libs/reveal/lib/js/head.min.js"></script>
+		<script src="../../../assets/libs/reveal/reveal.js"></script>
+		<script src="../../../assets/js/common.js"></script>
 
 		<script>
-			Reveal.initialize({
-				history: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{
-						src: 'plugin/highlight/highlight.js',
-						async: true,
-						callback: function() {
-							hljs.initHighlightingOnLoad();
-						}
-					}
-				]
-			});
-
 			Reveal.addEventListener('slidechanged', function (event) {
 				if (Reveal.isLastSlide()) {
 					cssLink.style.display = 'block'

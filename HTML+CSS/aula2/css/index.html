@@ -19,207 +19,100 @@
 				</section>
 
 				<section>
-					<h2>O que é CSS?</h2>
-					<p class="default-color">Cascading Style Sheet</p>
+					<h2>Formatos de cor</h2>
+					<div style="text-align: left; width: 50%; margin: 0 auto;">
+						<strong>Hexadecimal:</strong> #f05331 <br>
+						<strong>RGB:</strong> rgb(240, 83, 49) <br>
+						<strong>RGBA:</strong> rgba(240, 83, 49, 0.5) <br>
+					</div>
 				</section>
 
 				<section>
-					<img src="images/lego.gif" width="900" style="border: none; box-shadow: none;">
-				</section>
-
-				<section>
-					<h2>Para que serve o CSS?</h2>
-					<p>As folhas de estilo servem para estilizar o nosso conteúdo HTML. O CSS permite alterar cores, planos de fundo, tipografias,
-					alturas, larguras, etc. Também permite gerar animações e transições.</p>
-				</section>
-
-				<section>
-					<h2>Inserindo CSS na sua página</h2>
-					<p>Há três métodos para vincular documentos HTML ao CSS:</p>
-				</section>
-
-				<section>
-					<h2>Externo</h2>
-					<pre>
-						<code class="html text-center large" data-trim>
-							<link rel="stylesheet" href="arquivoCSS.css">
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>Onde coloco esse link?</h2>
-					<pre>
-						<code class="html large" data-trim>
-							&#60;head&#62;
-							  <link rel="stylesheet" href="arquivoCSS.css">
-							&#60;/head&#62;
-						</code>
-					</pre>
-				</section>
-
-
-				<section>
-					<h2>Interno</h2>
-					<pre>
-						<code class="html text-center large" data-trim>
-							<style></style>
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>Em linha</h2>
-					<pre class="large">
-						<code class="html text-center large" data-trim>
-							<p style="color: red;"></p>
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>Regras de CSS</h2>
-					<p>Conceito</p>
+					<h2>Opacidade</h2>
+					<span>Deixa todo o elemento transparente, não só o fundo.</span>
 					<pre>
 						<code class="css large" data-trim>
-							seletor {
-							  propriedade: valor;
+							.transparente {
+						    opacity: 0.5;
 							}
 						</code>
 					</pre>
 				</section>
-				<!-- IDEA: inserir os tipos de seletores: id e tag -->
+
 				<section>
-					<h2>Regras de CSS</h2>
-					<p>Exemplo</p>
+					<h2>Propriedades de plano de fundo</h2>
+					<span>Essas propriedades são utilizadas para estabelecer o fundo de qualquer elemento:</span>
+				</section>
+
+				<section>
+					<h2>Adicionando imagem ao fundo</h2>
 					<pre>
 						<code class="css large" data-trim>
 							body {
-							  background-color: #00ff00;
-							  font-family: sans-serif;
-							  text-align: center;
+						   background-image: url(../images/fundo.jpg);
 							}
 						</code>
 					</pre>
 				</section>
 
 				<section>
-					<h2>Propriedades CSS</h2>
-					<p>Tipografia</p>
+					<h2>Repetição no fundo</h2>
 					<pre>
 						<code class="css large" data-trim>
-							p {
-							  font-family: verdana, arial, sans-serif;
+							body {
+						   background-repeat: repeat;
 							}
 						</code>
 					</pre>
+					<span><strong>outros valores:</strong> no-repeat, repeat-x, repeat-y</span>
 				</section>
 
 				<section>
-					<h2>Propriedades CSS</h2>
-					<p>Tipografia</p>
-					<pre class="mb-0">
-						<code class="css large" data-trim>
-						h1 {
-						  font-size: 15px;
-						}
-						</code>
-					</pre>
-					<h6 >Outros valores</h6>
-					<ul>
-						<li>10em</li>
-						<li>20pt</li>
-						<li>5cm</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Propriedades CSS</h2>
-					<p>Tipografia</p>
-					<pre class="mb-0">
-						<code class="css large" data-trim>
-							.fonteLarga {
-							  font-weight: bolder;
-							}
-						</code>
-					</pre>
-					<h6>Outros valores</h6>
-					<ul>
-						<li>Lighter</li>
-						<li>Normal</li>
-						<li>100 a 900</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Propriedades CSS</h2>
-					<p>Tipografia</p>
+					<h2>Posicionamento do fundo</h2>
 					<pre>
 						<code class="css large" data-trim>
-						 .fonteItalic {
-				  	   font-style: italic;
+							body {
+						   background-position: X Y;
 							}
 						</code>
 					</pre>
-					<h6>Outros valores</h6>
-					<ul>
-						<li>Normal</li>
-						<li>Oblique</li>
-					</ul>
+					<span><strong>outros valores:</strong> left, right, bottom, center</span><br>
 				</section>
 
 				<section>
-					<h2>Propriedades CSS</h2>
-					<p>Tipografia</p>
-					<pre class="mb-0">
+					<h2>Anexos para o fundo</h2>
+					<pre>
 						<code class="css large" data-trim>
-						 div {
-				  	   text-align: left;
+							body {
+						   background-attachment: scroll;
 							}
 						</code>
 					</pre>
-					<h6>Outros valores</h6>
-					<ul>
-						<li>Justify</li>
-						<li>Center</li>
-						<li>Right</li>
-					</ul>
+					<span><strong>outros valores:</strong> fixed </span><br>
 				</section>
 
 				<section>
-					<h2>Propriedades CSS</h2>
-					<p>Tipografia</p>
-					<pre class="mb-0">
+					<h2>Cor de fundo</h2>
+					<pre class="large">
 						<code class="css large" data-trim>
-						 a {
-				  	   text-decoration: none;
+							body {
+							  background-color: #F2F2F2;
 							}
 						</code>
 					</pre>
-					<h6>Outros valores</h6>
-					<ul>
-						<li>Underline</li>
-						<li>Overline</li>
-						<li>Line-through</li>
-					</ul>
+					<span><strong>outros valores:</strong> rgb(0,0,0), rga(0,0,0,0.5) </span><br>
 				</section>
 
 				<section>
-					<h2>Propriedades CSS</h2>
-					<p>Tipografia</p>
-					<pre class="mb-0">
+					<h2>Tamanho para o fundo</h2>
+					<pre class="large">
 						<code class="css large" data-trim>
-							p {
-							  line-height: 20px;
+							body {
+						   background-size: cover;
 							}
 						</code>
 					</pre>
-					<h6 >Outros valores</h6>
-					<ul>
-						<li>10em</li>
-						<li>20pt</li>
-						<li>5cm</li>
-					</ul>
+					<span><strong>outros valores:</strong> contain,length </span><br>
 				</section>
 
 				<section data-background="https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif">
