@@ -16,6 +16,11 @@
   overflow: hidden !important;
 }
 
+.reveal code.medium {
+  font-size: 28px !important;
+  line-height: 42px !important;
+}
+
 .reveal code.large {
   font-size: 32px !important;
   line-height: 46px !important;
@@ -41,36 +46,6 @@
   text-shadow: 2px 2px 2px black;
 }
 
-.reveal .exercise {
-  position: relative;
-  top: -40px;
-  left: 680px;
-  width: 100px;
-  z-index: 10;
-}
-
 .radius-100 {
   border-radius: 50%;
-}
-
-.zoom {
-  transition: transform 0.4s ease-in;
-}
-
-.zoom:hover {
-  transform: scale(1.2, 1.2);
-}
-
-.digitalhouse-logo {
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  width: 200px;
-}
-
-.module-logo {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  width: 80px;
 }
