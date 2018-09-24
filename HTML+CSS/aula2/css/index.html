@@ -3,19 +3,30 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Aula 1 - HTML</title>
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<link rel="stylesheet" href="css/custom.css">
+		<title>Aula 2 - CSS</title>
+		<link rel="stylesheet" href="../../../assets/css/main.css">
+		<style>
+			#cssLink {
+				position: absolute;
+				top: 15px;
+				right: 35px;
+				width: 80px;
+				z-index: 10;
+				display: none;
+			}
+		</style>
 	</head>
-	<body>
-		<img src="images/dh-logo.png" alt="Digital House" class="dh-logo">
-		<img src="images/css3-logo.png" alt="CSS3" class="slides-logo">
+	<body class="css-top-border">
+		<img src="../../../assets/images/dh-logo.png" alt="Digital House" class="digitalhouse-logo">
+		<img src="../../../assets/images/css3-logo.png" alt="CSS3" class="module-logo">
 
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image="images/css3.jpg">
+				<section data-background-image="../../../assets/images/css3.jpg">
+				</section>
+
+				<section>
+					<h2 class="css-color">Vamos ver mais regras de CSS?</h2>
 				</section>
 
 				<section>
@@ -116,32 +127,26 @@
 				</section>
 
 				<section data-background="https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif">
-					<h1 style="color: white; margin-top: 350px">Vamos praticar!</h1>
+					<a href="../exercicios.html#ex-3"><img src="../../../assets/images/exercise-1.jpg" class="zoom radius-100 exercise" alt="Cérebro malhando"></a>
+					<h1 class="shadow" style="color: white; margin-top: 350px">Vamos praticar!</h1>
 				</section>
 
-				<section data-background="images/thanks-1.gif"></section>
+				<section data-background="../../../assets/images/thanks-1.gif"></section>
 			</div>
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="../../../assets/libs/reveal/lib/js/head.min.js"></script>
+		<script src="../../../assets/libs/reveal/reveal.js"></script>
+		<script src="../../../assets/js/common.js"></script>
 
 		<script>
-			Reveal.initialize({
-				history: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{
-						src: 'plugin/highlight/highlight.js',
-						async: true,
-						callback: function() {
-							hljs.initHighlightingOnLoad();
-						}
-					}
-				]
-			});
+			Reveal.addEventListener('slidechanged', function (event) {
+				if (Reveal.isLastSlide()) {
+					cssLink.style.display = 'block'
+				} else {
+					cssLink.style.display = 'none'
+				}
+			})
 		</script>
 	</body>
 </html>

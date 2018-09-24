@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Exercícios - Aula 02 - HTML + CSS</title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <style>
     body { padding-bottom: 50px; font-size: 16px;}
     .main-li { margin-bottom: 20px; }
@@ -15,7 +14,7 @@
 <body>
   <div class="container">
     <div class="text-center">
-      <img src="html/images/dh-logo.png" alt="Digital House" width="400">
+      <img src="../../../assets/images/dh-logo.png" alt="Digital House" width="250">
     </div>
     <div class="page-header">
       <h1>
@@ -26,7 +25,7 @@
       </h1>
     </div>
 
-    <section>
+    <section id="ex-1">
       <div class="page-header">
         <h2>
           Com base nos exercícios anteriores:<br>
@@ -55,7 +54,7 @@
         <li class="main-li">
           Crie um link interno (âncora) que permita ir até a sessão <b>"Experiência Profissional"</b><br>
           <small><b>Exemplo:</b> "Ver Experiência Profissional".</small><br>
-          <small><b>Dica:</b> Se seu site estiver sem barra de rolagem então crie textos para que seu site tenha barra de rolagem, você pode usar esse <a href="https://br.lipsum.com/">Gerador de textos</a>.</small>
+          <small><b>Dica:</b> Se seu site estiver sem barra de rolagem então crie textos para que seu site tenha barra de rolagem, você pode usar este <a href="https://br.lipsum.com/">Gerador de textos</a>.</small>
         </li>
         <li class="main-li">
           Levando em conta o <b>item b</b>:
@@ -72,40 +71,62 @@
       </div>
     </section>
 
-    <section>
+    <section id="ex-2">
       <div class="page-header">
         <h2>
-          Agora vamos adicionar um pouco de CSS nessa página!<br>
-          <small>Crie um arquivo chamado <i>estilos.css</i></small>
+          Chegou a hora de usar imagens, vídeos e áudios!<br>
+          <small>Comece criando uma pasta chamada <i>images</i> dentro da mesma pasta onde estão seus arquivos HTML</small>
         </h2>
       </div>
       <ol>
         <li class="main-li">
-          Importe o arquivo criado na sua página. <br>
-          <small><b>Lembrete:</b> Utilize a tag <i>link</i> no <i>head</i> da página</small>
+          Procure e baixe os ícones do: Twitter, Facebook e Instagram, após isso basta salvá-los na pasta images. <br>
+          <small><b>Dica:</b> Você pode procurar as imagens <a href="https://www.iconfinder.com/">clicando aqui</a></small>
         </li>
         <li class="main-li">
-          Crie uma regra para mudar a cor de fundo da sua página para cinza. <br>
+          Transforme as imagens em links, use as tags criadas no item 1. <br>
+          <small><b>Dica:</b> Que tal colocar a tag de imagem dentro da tag de link?</small>
         </li>
         <li class="main-li">
-          Troque toda a tipografia da página para <b>sans-serif</b>. <br>
-          <small><b>Dica: </b>Aproveite a regra feita no exercício anterior.</small>
+          No Google Imagens, procurar e baixar pelo menos 3 imagens relacionadas a passatempos do seu interesse e salvá-las na pasta <i>images</i>.<br>
+          <small><b>Exemplo:</b> leitura, esportes, viagens, etc.</small><br>
+          <small><b>Atenção:</b>As fotos devem ter no máximo 1200px de largura</small><br>
         </li>
         <li class="main-li">
-          Troque a cor dos títulos e subtítulos para qualquer outra cor de sua escolha. <br>
-          <small><b>Dica: </b>Você pode pegar as referências de cores <a href="https://www.materialpalette.com/colors" target="blank">neste site</a>.</small>
+          Coloque as imagens do item anterior no seu arquivo <i>hobbies.html</i>. <br>
+          <ul>
+            <li>Todas as imagens devem ficar com 360px de largura e altura deve ser proporcional</li>
+            <li>Todas devem ter uma descrição atribuída</li>
+          </ul>
         </li>
         <li class="main-li">
-          Troque a cor dos parágrafos para qualquer outra cor de sua escolha.
+          Escolha um vídeo do youtube e faça download dele em formato <b>webm</b>, após isso crie uma pasta chamada <i>videos</i> ela deve ficar junto com seus arquivos HTML.<br>
+          <small><b>Dica:</b> Você pode usar este <a href="https://www.onlinevideoconverter.com/pt/video-converter">serviço</a> par fazer download do seu vídeo</small>
         </li>
         <li class="main-li">
-          Centralize o título principal e aplique um estilo itálico.
+          Crie um subtítulo chamado <b>"Vídeo em HTML5"</b>
         </li>
         <li class="main-li">
-          Por padrão, todos os títulos e subtítulos são negrito. Remova o negrito apenas dos subtítulos.
+          Coloque o vídeo no seu arquivo <b>hobbies.html</b>, ele deve ter:
+          <ul>
+            <li>640px de largura</li>
+            <li>Controles de reprodução</li>
+            <li>Imagem de capa (de sua escolha)</li>
+          </ul>
         </li>
         <li class="main-li">
-          Alinhar todos os parágrafos de modo <b>justificado</b>, com um tamanho de fonte de <b>14px</b> e um espaçamento entre linhas de <b>16px</b>.
+          Escolha mais um vídeo do youtube e faça download dele em formato <b>mp3</b>, após isso crie uma pasta chamada <i>audios</i> ela deve ficar junto com seus arquivos HTML.<br>
+          <small><b>Dica:</b> Você pode usar este <a href="https://www.onlinevideoconverter.com/pt/video-converter">serviço</a> par fazer download do seu áudio</small>
+        </li>
+        <li class="main-li">
+          Crie um subtítulo chamado <b>"Áudio em HTML5"</b>
+        </li>
+        <li class="main-li">
+          Coloque o áudio no seu arquivo <b>hobbies.html</b>, ele deve ter:
+          <ul>
+            <li>Controles de reprodução</li>
+            <li>E um loop na reprodução</li>
+          </ul>
         </li>
       </ol>
       <div class="alert alert-success" role="alert">
@@ -114,22 +135,44 @@
       </div>
     </section>
 
-    <section>
+    <section id="ex-3">
       <div class="page-header">
         <h2>
-          Desafio<br>
-          <small>Temos um desafio pra você =)</small>
+          Agora vamos usar um pouco de CSS no hobbies.html<br>
+          <small>Vamos continuar usando o arquivo <i>estilos.css</i></small>
         </h2>
       </div>
-      <p>
-        O Google tem um serviço gratuito chamado <b>Google Fonts</b>, lá você encontra diversos tipos de fontes diferentes para usar no seu site, todas gratuitas!
-      </p>
-      <p>
-        Nosso desafio é: acesse o <a href="https://fonts.google.com/">Google Fonts</a> e escolha uma fonte de sua preferência para inserir na sua página.
-      </p>
-      <p>
-        Depois de escolher uma fonte, o Google Fonts disponibiliza uma tag <b>link</b> para você importar a fonte no seu <b>head</b>, depois disso basta você usar a fonte através da regra <b>font-family</b>. O próprio Google Fonts vai te dar um exemplo disso!
-      </p>
+      <ol>
+        <li class="main-li">
+          O primeiro passo é escolher uma imagem que sirva como plano de fundo e baixá-la.<br>
+          <small><b>Dica:</b> Você pode usar este <a href="http://thepatternlibrary.com/">serviço</a></small>
+        </li>
+        <li class="main-li">
+          Crie uma regra para colocar a imagem como plano de fundo, essa imagem <b>não</b> deve se movimentar quando a página rolar.
+        </li>
+        <li class="main-li">
+          Crie uma regra par o título principal que aplique uma cor de fundo em formato <i>RGBA</i>.<br>
+          <small><b>Lembrete:</b> Não esqueça de usar a transparência</small>
+        </li>
+        <li class="main-li">
+          Ainda na mesma regra, atribua uma cor de fonte que contraste com a cor de fundo para que o texto fique legível.
+        </li>
+        <li class="main-li">
+          Crie uma regra usando uma classe chamada <b>destaque</b> que será atribuída a pelo menos 4 parágrafosde sua escolha, esta regra deve ter:
+          <ul>
+            <li>
+              Uma cor de fundo e cor de fonte à sua escolha<br>
+              <small><b>Lembrete:</b> O texto deve ficar legível</small>
+            </li>
+            <li>
+              A fonte deve ter 22px.
+            </li>
+            <li>
+              Se for necessário ajuste o espaçamento entre linhas de acordo com o tamanho da fonte.
+            </li>
+          </ul>
+        </li>
+      </ol>
     </section>
   </div>
 
@@ -164,7 +207,6 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
