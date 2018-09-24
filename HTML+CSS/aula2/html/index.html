@@ -5,23 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>Aula 2 - HTML</title>
 		<link rel="stylesheet" href="../../../assets/css/main.css">
-		<style>
-			#cssLink {
-				position: absolute;
-				top: 15px;
-				right: 35px;
-				width: 80px;
-				z-index: 10;
-				display: none;
-			}
-		</style>
 	</head>
 	<body class="html-top-border">
 		<img src="../../../assets/images/dh-logo.png" alt="Digital House" class="digitalhouse-logo">
 		<img src="../../../assets/images/html5-logo.png" alt="HTML5" class="module-logo">
 
-		<a href="../css/#/" class="css-link" id="cssLink">
-			<img src="../../../assets/images/css3.jpg" class="zoom radius-100" alt="CSS Botão" width="100" height="100">
+		<a href="../css/#/" class="zoom radius-100" id="cssLink">
+			<img src="../../../assets/images/css3-logo.png" alt="CSS Botão">
+		</a>
+
+		<a href="../exercicios.html#ex-2" class="exercise" id="exerciseLink">
+			<img src="../../../assets/images/exercise-1.jpg" class="zoom radius-100" alt="Cérebro malhando" width="100" height="100">
 		</a>
 
 		<div class="reveal">
@@ -84,7 +78,7 @@
 
 				<section>
 					<h3>Vamos definir!</h3>
-					<p>Os <strong>links</strong> de internet são formados por uma série de caminhos. O caminho indica o <strong>endereço</strong> até onde o navegador deve ir quando o usuário clica em um link.</p>
+					<p>Os <strong>links</strong> da internet são formados por uma série de caminhos. O caminho indica o <strong>endereço</strong> até onde o navegador deve ir quando o usuário clica em um link.</p>
 				</section>
 
 				<section>
@@ -99,9 +93,10 @@
 					  </thead>
 					  <tbody>
 					    <tr>
-					      <td class="b-right">https://digitalhouse.com</td>
+					      <td class="b-right">http://digitalhouse.com/</td>
 					      <td>../images/teaser.jpg</td>
-					    </tr>
+							</tr>
+							</tr>
 					  </tbody>
 					</table>
 				</section>
@@ -119,8 +114,9 @@
 
 				<section>
 					<h2>Externo</h2>
+					<p>Link que levará para outro site</p>
 					<pre>
-						<code class="html text-center" data-trim>
+						<code class="html text-center medium" data-trim>
 							<a href="http://google.com">Ir para o Google</a>
 						</code>
 					</pre>
@@ -128,24 +124,37 @@
 
 				<section>
 					<h2>Local</h2>
+					<p>Link que levará para uma página do seu site</p>
 					<pre>
-						<code class="html text-center" data-trim>
+						<code class="html text-center medium" data-trim>
 							<a href="contato.html">Fale conosco</a>
 						</code>
 					</pre>
 				</section>
 
 				<section>
-					<h2>Interno (âncora)</h2>
+					<h2>Âncora</h2>
+					<p>Link que levará para uma área específica dentro da página</p>
+					<pre>
+						<code class="html text-center medium" data-trim>
+							<a href="#bio">Biografia</a>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Nova janela</h2>
+					<p>Para abrir um link em uma nóva página é necessário o atributo <strong>target="_blank"</strong></p>
 					<pre>
 						<code class="html text-center" data-trim>
-							<a href="#bio"> Biografia</a>
+							<a href="http://google.com" target="_blank">Ir para o Google</a>
 						</code>
 					</pre>
 				</section>
 
 				<section>
 					<h2>E-mail</h2>
+					<p>Abrirá o software de e-mail padrão do Sistema Operacional, ex: Outlook, Mail, etc.</p>
 					<pre>
 						<code class="html text-center" data-trim>
 							<a href="mailto:user@server.com">Fale comigo agora!</a>
@@ -155,9 +164,10 @@
 
 				<section>
 					<h2>Telefone</h2>
+					<p>Abrirá a tela do celular para realizar uma ligação para o número indicado.</p>
 					<pre>
-						<code class="html text-center" data-trim>
-							<a href="tel:1145678900"> Ligue já!</a>
+						<code class="html text-center medium" data-trim>
+							<a href="tel:1145678900">Ligue já!</a>
 						</code>
 					</pre>
 				</section>
@@ -194,7 +204,7 @@
 					<h2>Tag de vídeo</h2>
 					<pre class="m-b-0">
 						<code class="hmtl large" data-trim>
-							&lt;video width="" poster="image.jpg" autoplay&gt;
+							&lt;video autoplay controls poster="image.jpg" autoplay&gt;
 						   <source src="video.mp4" type="video/mp4">
 						   <source src="video.ogg" type="video/ogg">
 						   <source src="video.webm" type="video/webm">
@@ -202,14 +212,13 @@
 							&lt;/video&gt;
 						</code>
 					</pre>
-					<p><b>Outros atributos:</b> controls, autoplay, loop, poster</p>
 				</section>
 
 				<section>
 					<h2>Tag de áudio</h2>
 					<pre>
 						<code class="html large" data-trim>
-							&lt;audio width="" controls&gt;
+							&lt;audio autoplay controls&gt;
 						   <source src="audio.mp3" type="audio/mp3">
 						   <source src="audio.wav" type="audio/x-wav">
 						   <source src="audio.ogg" type="audio/ogg-">
@@ -217,11 +226,10 @@
 						 &lt;/audio&gt;
 						</code>
 					</pre>
-					<p><b>Outros atributos:</b> controls, autoplay, loop e muted</p>
+					<p><b>Outros atributos:</b> loop, muted</p>
 				</section>
 
-				<section data-background="../../../assets/images/lets-practice.gif">
-					<a href="../exercicios.html#ex-2"><img src="../../../assets/images/exercise-1.jpg" class="zoom radius-100 exercise" alt="Cérebro malhando"></a>
+				<section data-background="../../../assets/images/lets-practice.gif">					
 					<h1 class="shadow" style="color: white; margin-top: 350px;">Vamos praticar!</h1>
 				</section>
 
@@ -236,8 +244,10 @@
 			Reveal.addEventListener('slidechanged', function (event) {
 				if (Reveal.isLastSlide()) {
 					cssLink.style.display = 'block'
+					exerciseLink.style.display = 'block'
 				} else {
 					cssLink.style.display = 'none'
+					exerciseLink.style.display = 'none'
 				}
 			})
 		</script>
