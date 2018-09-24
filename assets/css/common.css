@@ -16,6 +16,11 @@
   overflow: hidden !important;
 }
 
+.reveal code.medium {
+  font-size: 28px !important;
+  line-height: 42px !important;
+}
+
 .reveal code.large {
   font-size: 32px !important;
   line-height: 46px !important;

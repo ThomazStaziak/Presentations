@@ -26,6 +26,7 @@
 
 		<div class="reveal">
 			<div class="slides">
+				
 				<section data-background-image="images/html5.jpg">
 				</section>
 
@@ -84,7 +85,7 @@
 
 				<section>
 					<h3>Vamos definir!</h3>
-					<p>Os <strong>links</strong> de internet são formados por uma série de caminhos. O caminho indica o <strong>endereço</strong> até onde o navegador deve ir quando o usuário clica em um link.</p>
+					<p>Os <strong>links</strong> da internet são formados por uma série de caminhos. O caminho indica o <strong>endereço</strong> até onde o navegador deve ir quando o usuário clica em um link.</p>
 				</section>
 
 				<section>
@@ -99,9 +100,10 @@
 					  </thead>
 					  <tbody>
 					    <tr>
-					      <td class="b-right">https://digitalhouse.com</td>
+					      <td class="b-right">http://digitalhouse.com/</td>
 					      <td>../images/teaser.jpg</td>
-					    </tr>
+							</tr>
+							</tr>
 					  </tbody>
 					</table>
 				</section>
@@ -119,8 +121,9 @@
 
 				<section>
 					<h2>Externo</h2>
+					<p>Link que levará para outro site</p>
 					<pre>
-						<code class="html text-center" data-trim>
+						<code class="html text-center medium" data-trim>
 							<a href="http://google.com">Ir para o Google</a>
 						</code>
 					</pre>
@@ -128,24 +131,37 @@
 
 				<section>
 					<h2>Local</h2>
+					<p>Link que levará para uma página do seu site</p>
 					<pre>
-						<code class="html text-center" data-trim>
+						<code class="html text-center medium" data-trim>
 							<a href="contato.html">Fale conosco</a>
 						</code>
 					</pre>
 				</section>
 
 				<section>
-					<h2>Interno (âncora)</h2>
+					<h2>Âncora</h2>
+					<p>Link que levará para uma área específica dentro da página</p>
+					<pre>
+						<code class="html text-center medium" data-trim>
+							<a href="#bio">Biografia</a>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Nova janela</h2>
+					<p>Para abrir um link em uma nóva página é necessário o atributo <strong>target="_blank"</strong></p>
 					<pre>
 						<code class="html text-center" data-trim>
-							<a href="#bio"> Biografia</a>
+							<a href="http://google.com" target="_blank">Ir para o Google</a>
 						</code>
 					</pre>
 				</section>
 
 				<section>
 					<h2>E-mail</h2>
+					<p>Abrirá o software de e-mail padrão do Sistema Operacional, ex: Outlook, Mail, etc.</p>
 					<pre>
 						<code class="html text-center" data-trim>
 							<a href="mailto:user@server.com">Fale comigo agora!</a>
@@ -155,9 +171,10 @@
 
 				<section>
 					<h2>Telefone</h2>
+					<p>Abrirá a tela do celular para realizar uma ligação para o número indicado.</p>
 					<pre>
-						<code class="html text-center" data-trim>
-							<a href="tel:1145678900"> Ligue já!</a>
+						<code class="html text-center medium" data-trim>
+							<a href="tel:1145678900">Ligue já!</a>
 						</code>
 					</pre>
 				</section>
@@ -192,8 +209,8 @@
 				<section>
 					<h2>Tag de vídeo</h2>
 					<pre class="m-b-0">
-						<code class="hmtl large" data-trim>
-							<video width="" poster="image.jpg">
+						<code class="html large" data-trim>
+							<video autoplay controls poster="image.jpg">
 						   <source src="video.mp4" type="video/mp4">
 						   <source src="video.ogg" type="video/ogg">
 						   <source src="video.webm" type="video/webm">
@@ -201,16 +218,13 @@
 							</video>
 						</code>
 					</pre>
-					<span>Outros atributos:</span>
-					<li>controls</li>
-					<li>autoplay</li>
 				</section>
 
 				<section>
 					<h2>Tag de áudio</h2>
 					<pre>
 						<code class="html large" data-trim>
-							<audio width="" controls poster="image.jpg">
+							<audio autoplay controls poster="image.jpg">
 						   <source src="audio.mp3" type="audio/mp3">
 						   <source src="audio.wav" type="audio/x-wav">
 						   <source src="audio.ogg" type="audio/ogg-">
