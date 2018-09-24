@@ -1,32 +1,11 @@
-body {
-  border-top: 5px solid #40aae0;
-}
-
-.dh-logo {
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  width: 200px;
-}
-
-.slides-logo {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  width: 80px;
-}
-
 .reveal h1, .reveal h2,
 .reveal h3, .reveal h4,
 .reveal h5, .reveal h6 {
   text-transform: none !important;
 }
 
-.reveal .default-color {
-  color: #40aae0;
-}
-
 .reveal pre {
+  width: 100% !important;
   box-shadow: none !important;
   background-color: white !important;
 }
@@ -35,6 +14,11 @@ body {
   padding: 30px !important;
   line-height: 35px !important;
   overflow: hidden !important;
+}
+
+.reveal code.medium {
+  font-size: 28px !important;
+  line-height: 42px !important;
 }
 
 .reveal code.large {
@@ -48,4 +32,20 @@ body {
 
 .reveal .mb-0 {
   margin-bottom: 0;
+}
+
+.reveal .border {
+  border: 1px #000 solid;
+}
+
+.reveal .b-right {
+  border-right: 1px #000 solid;
+}
+
+.reveal .shadow {
+  text-shadow: 2px 2px 2px black;
+}
+
+.radius-100 {
+  border-radius: 50%;
 }

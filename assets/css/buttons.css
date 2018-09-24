@@ -1,0 +1,23 @@
+#exerciseLink {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+#cssLink {
+  position: absolute;
+  top: 130px;
+  right: 15px;
+  z-index: 10;
+  display: none;
+  background: #40a9df;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+#cssLink img {
+  height: 80%;
+  margin-top: 11px;
+}

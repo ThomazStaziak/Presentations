@@ -2,5 +2,21 @@
 @import "../libs/reveal/theme/white.css";
 @import "../libs/reveal/lib/css/zenburn.css";
 
-@import "common.css";
+@import "reveal-custom.css";
 @import "colors.css";
+@import "buttons.css";
+@import "animations.css";
+
+.digitalhouse-logo {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 200px;
+}
+
+.module-logo {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  width: 80px;
+}
