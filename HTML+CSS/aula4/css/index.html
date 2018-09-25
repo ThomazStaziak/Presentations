@@ -26,108 +26,140 @@
 				</section>
 
 				<section>
-					<h2 class="css-color">Vamos ver mais regras de CSS?</h2>
+					<h2 class="css-color">Box Model</h2>
 				</section>
 
 				<section>
-					<h2>Formatos de cor</h2>
-					<div style="text-align: left; width: 50%; margin: 0 auto;">
-						<strong>Hexadecimal:</strong> #f05331 <br>
-						<strong>RGB:</strong> rgb(240, 83, 49) <br>
-						<strong>RGBA:</strong> rgba(240, 83, 49, 0.5) <br>
-					</div>
+					<h3>Vamos definir!</h3>
+					<p>É o comportamento que faz com que todos os elementos de um página HTML sejam representados por caixas.</p>
 				</section>
 
 				<section>
-					<h2>Opacidade</h2>
-					<span>Deixa todo o elemento transparente, não só o fundo.</span>
+					<h2 class="css-color">Tipos de display</h2>
+				</section>
+
+				<section>
+					<h2>Inline</h2>
+					<p>Define um elemento com comportamento de linha. Não recebe algumas propriedades do modelo de caixa.</p>
+				</section>
+
+				<section>
+					<h2>Block</h2>
+					<p>Define um elemento com comportamento de bloco. Recebe "facilmente" propriedades do modelo de caixa.</p>
+				</section>
+
+				<section>
+					<h2>Inline vs Block</h2>
+					<img src="../../../assets/images/exemplo-aula-4.png" width="750" alt="exemplo inline e block">
+				</section>
+
+				<section>
+					<h2>Inline-block</h2>
+					<p>Define um elemento com comportamento de semibloco, recebe propriedades do elemento bloco e o elemento em linha.</p>
+				</section>
+
+				<section>
+					<h2>None</h2>
+					<p>Oculta visualmente um elemento sem eliminá-lo da estrutura do HTML, ou seja o efeito é apenas visual.</p>
+				</section>
+
+				<section>
+					<h2>Posicionamento por flutuação</h2>
+					<p>Permite que os elementos de bloco flutuem na página HTML. Os elementos abaixo do elemento flutuante presumem que ele não existe e tendem a ocupar o lugar vazio deixado pelo elemento flutuante.</p>
+				</section>
+
+				<section>
+					<h2>Float</h2>
+					<p>Existem dois tipos de flutuação a esquerda e a direita.</p>
 					<pre>
 						<code class="css large" data-trim>
-							.transparente {
-						    opacity: 0.5;
+							.direita {
+							  float: right;
+							}
+
+							.esquerda {
+							  float: left;
 							}
 						</code>
 					</pre>
 				</section>
 
 				<section>
-					<h2>Propriedades de plano de fundo</h2>
-					<span>Essas propriedades são utilizadas para estabelecer o fundo de qualquer elemento:</span>
+					<h2>Problemas da flutuação</h2>
+					<img src="../../../assets/images/exemplo3-aula-4.png" width="750" alt="">
 				</section>
 
 				<section>
-					<h2>Adicionando imagem ao fundo</h2>
+					<h2>Clear</h2>
+					<p>É a forma mais simples de "limpar" flutuações. <br> Basta aplicar essa propriedade ao elemento que está abaixo das caixas flutuantes para que ele mantenha sua posição.</p>
+				</section>
+
+				<section>
+					<h2>Resolvendo o problema</h2>
+					<img src="../../../assets/images/exemplo2-aula-4.png" width="600" alt="">
+				</section>
+
+				<section>
+					<h2>Overflow</h2>
+					<p>Controla como o conteúdo de uma caixa "transborda".</p>
+				</section>
+
+				<section>
+					<p>Ele permite manipular o que acontece quando o conteúdo interno supera o tamanho do container pai.</p>
 					<pre>
 						<code class="css large" data-trim>
-							body {
-						   background-image: url(../images/fundo.jpg);
+							div {
+						   overflow: hidden;
 							}
 						</code>
 					</pre>
+					<p><b>Outros valores:</b> visible, scroll, auto</p>
 				</section>
 
 				<section>
-					<h2>Repetição no fundo</h2>
+					<h2>Width</h2>
+					<p>Define a largura de um elemento</p>
 					<pre>
 						<code class="css large" data-trim>
-							body {
-						   background-repeat: repeat;
+							.largura {
+						   width: 100px;
 							}
 						</code>
 					</pre>
-					<span><strong>outros valores:</strong> no-repeat, repeat-x, repeat-y</span>
+					<p style="font-size: 35px;"><b>Lembrete:</b> Só aplica mudanças para elementos do tipo bloco.</p>
 				</section>
 
 				<section>
-					<h2>Posicionamento do fundo</h2>
+					<h2>Height</h2>
+					<p>Define a largura de um elemento</p>
 					<pre>
 						<code class="css large" data-trim>
-							body {
-						   background-position: X Y;
+							.altura {
+						   height: 100px;
 							}
 						</code>
 					</pre>
-					<span><strong>outros valores:</strong> left, right, bottom, center</span><br>
+					<p style="font-size: 35px;"><b>Lembrete:</b> Só aplica mudanças para elementos do tipo bloco.</p>
 				</section>
 
 				<section>
-					<h2>Anexos para o fundo</h2>
+					<h2>Padding</h2>
+					<p>Define o espaçamento interno de um elemento</p>
 					<pre>
 						<code class="css large" data-trim>
-							body {
-						   background-attachment: scroll;
+							.preenchimento {
+						   padding: 50px;
 							}
 						</code>
 					</pre>
-					<span><strong>outros valores:</strong> fixed </span><br>
+					<p style="font-size: 35px;"><b>Lembrete:</b> Só aplica mudanças para elementos do tipo bloco.</p>
 				</section>
 
 				<section>
-					<h2>Cor de fundo</h2>
-					<pre class="large">
-						<code class="css large" data-trim>
-							body {
-							  background-color: #F2F2F2;
-							}
-						</code>
-					</pre>
-					<span><strong>outros valores:</strong> rgb(0,0,0), rga(0,0,0,0.5) </span><br>
-				</section>
-
-				<section>
-					<h2>Tamanho para o fundo</h2>
-					<pre class="large">
-						<code class="css large" data-trim>
-							body {
-						   background-size: cover;
-							}
-						</code>
-					</pre>
-					<span><strong>outros valores:</strong> contain,length </span><br>
+					<h2>Existem também outras variações de padding</h2>
 				</section>
 
 				<section data-background="https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif">
-					<a href="../exercicios.html#ex-3"><img src="../../../assets/images/exercise-1.jpg" class="zoom radius-100 exercise" alt="Cérebro malhando"></a>
 					<h1 class="shadow" style="color: white; margin-top: 350px">Vamos praticar!</h1>
 				</section>
 
